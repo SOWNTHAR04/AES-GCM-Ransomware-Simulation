@@ -9,20 +9,25 @@ This project implements a ransomware-style encryption and decryption system usin
        Uses a 256-bit symmetric key for encryption.
        Galois/Counter Mode (GCM) ensures both confidentiality and integrity.
        Each file is encrypted with a unique random nonce, making ciphertexts secure even if the same file is encrypted multiple times.
+
 Graphical User Interface (GUI)
       Built using Python’s tkinter library.
       Allows users to select folders for encryption and decryption.
       Provides interactive buttons for “Encrypt Folder” and “Decrypt Folder.” 
+
 Progress Visualization
       A progress bar displays real-time encryption/decryption activity.
       A terminal-like log panel shows step-by-step updates, simulating the behavior of ransomware.
+
 File Handling Simulation
       Original files are encrypted, converted into .encrypted format, and moved into a simulated “server” folder.
       Decryption restores the files from the server folder back into a user-selected directory.
+
 🔐 Why AES-GCM?
       Security: AES is a U.S. government standard and widely used for protecting classified information.
       Authenticated Encryption: GCM mode combines encryption with authentication, ensuring files cannot be altered without detection.
       Performance: AES-GCM is optimized for modern hardware, offering strong security with high speed.
+
 📌 Applications
       Demonstrates how ransomware attacks encrypt victim files.
       Educational tool for learning about modern encryption techniques.
